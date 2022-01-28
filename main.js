@@ -35,3 +35,14 @@ console.log("nose x= "+results[0].pose.nose.x);
 console.log("nose y= "+results[0].pose.nose.y);
 }
 }
+
+
+function draw() {
+    image(video, 0, 0,500,500);
+    fill(255,0,0);
+    stroke(255,0,0);
+    circle(mustacheX,mustacheY,20);
+    image(mustache_nose,mustacheX,mustacheY,30,30);
+}
+function take_snapshot() {
+    save('myFilterImage.png');
